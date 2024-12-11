@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet3">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('Dim Goods'[Goods Id], 'Dim Goods'[Name], 'Dim Goods'[Category], 'Dim Person'[Person Id], 'Dim Person'[Name])</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Goods</DimensionName>
+                    <HierarchyName>Goods Id</HierarchyName>
+                    <HierarchyUniqueName>[Dim Goods].[Goods Id]</HierarchyUniqueName>
+                    <LevelName>Goods Id</LevelName>
+                    <UniqueName>[Dim Goods].[Goods Id].[Goods Id]</UniqueName>
+                  </ID>
+                  <ItemCaption>Goods Id</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Goods</DimensionName>
+                    <HierarchyName>Name</HierarchyName>
+                    <HierarchyUniqueName>[Dim Goods].[Name]</HierarchyUniqueName>
+                    <LevelName>Name</LevelName>
+                    <UniqueName>[Dim Goods].[Name].[Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Goods</DimensionName>
+                    <HierarchyName>Category</HierarchyName>
+                    <HierarchyUniqueName>[Dim Goods].[Category]</HierarchyUniqueName>
+                    <LevelName>Category</LevelName>
+                    <UniqueName>[Dim Goods].[Category].[Category]</UniqueName>
+                  </ID>
+                  <ItemCaption>Category</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Person</DimensionName>
+                    <HierarchyName>Person Id</HierarchyName>
+                    <HierarchyUniqueName>[Dim Person].[Person Id]</HierarchyUniqueName>
+                    <LevelName>Person Id</LevelName>
+                    <UniqueName>[Dim Person].[Person Id].[Person Id]</UniqueName>
+                  </ID>
+                  <ItemCaption>Person Id</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Person</DimensionName>
+                    <HierarchyName>Name</HierarchyName>
+                    <HierarchyUniqueName>[Dim Person].[Name]</HierarchyUniqueName>
+                    <LevelName>Name</LevelName>
+                    <UniqueName>[Dim Person].[Name].[Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Goods DW</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('Dim Goods'[Goods Id], 'Dim Goods'[Name], 'Dim Goods'[Category], 'Dim Person'[Person Id], 'Dim Person'[Name])</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Goods_Id">
+        <DataField>Dim Goods[Goods Id]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Name">
+        <DataField>Dim Goods[Name]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Category">
+        <DataField>Dim Goods[Category]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Person_Id">
+        <DataField>Dim Person[Person Id]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Name2">
+        <DataField>Dim Person[Name]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

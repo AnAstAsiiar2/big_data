@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet2">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('Dim Goods'[Goods Id], 'Dim Goods'[Name], 'Dim Goods'[Sale Price], 'Dim Date'[Date Id], 'Dim Date'[Date])</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Goods</DimensionName>
+                    <HierarchyName>Goods Id</HierarchyName>
+                    <HierarchyUniqueName>[Dim Goods].[Goods Id]</HierarchyUniqueName>
+                    <LevelName>Goods Id</LevelName>
+                    <UniqueName>[Dim Goods].[Goods Id].[Goods Id]</UniqueName>
+                  </ID>
+                  <ItemCaption>Goods Id</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Goods</DimensionName>
+                    <HierarchyName>Name</HierarchyName>
+                    <HierarchyUniqueName>[Dim Goods].[Name]</HierarchyUniqueName>
+                    <LevelName>Name</LevelName>
+                    <UniqueName>[Dim Goods].[Name].[Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Goods</DimensionName>
+                    <HierarchyName>Sale Price</HierarchyName>
+                    <HierarchyUniqueName>[Dim Goods].[Sale Price]</HierarchyUniqueName>
+                    <LevelName>Sale Price</LevelName>
+                    <UniqueName>[Dim Goods].[Sale Price].[Sale Price]</UniqueName>
+                  </ID>
+                  <ItemCaption>Sale Price</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Date</DimensionName>
+                    <HierarchyName>Date Id</HierarchyName>
+                    <HierarchyUniqueName>[Dim Date].[Date Id]</HierarchyUniqueName>
+                    <LevelName>Date Id</LevelName>
+                    <UniqueName>[Dim Date].[Date Id].[Date Id]</UniqueName>
+                  </ID>
+                  <ItemCaption>Date Id</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Date</DimensionName>
+                    <HierarchyName>Date</HierarchyName>
+                    <HierarchyUniqueName>[Dim Date].[Date]</HierarchyUniqueName>
+                    <LevelName>Date</LevelName>
+                    <UniqueName>[Dim Date].[Date].[Date]</UniqueName>
+                  </ID>
+                  <ItemCaption>Date</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Goods DW</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('Dim Goods'[Goods Id], 'Dim Goods'[Name], 'Dim Goods'[Sale Price], 'Dim Date'[Date Id], 'Dim Date'[Date])</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Goods_Id">
+        <DataField>Dim Goods[Goods Id]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Name">
+        <DataField>Dim Goods[Name]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Sale_Price">
+        <DataField>Dim Goods[Sale Price]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Date_Id">
+        <DataField>Dim Date[Date Id]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Date">
+        <DataField>Dim Date[Date]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

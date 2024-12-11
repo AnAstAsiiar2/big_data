@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-21RFT4C_NASTYASQL.GoodsDW"
+  DTS:DTSID="{18B980DC-909D-4D00-99F7-D8A124F427AD}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-21RFT4C\NASTYASQL;Initial Catalog=GoodsDW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Goods Integration Services Project-{18B980DC-909D-4D00-99F7-D8A124F427AD}DESKTOP-21RFT4C\NASTYASQL.GoodsDW;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

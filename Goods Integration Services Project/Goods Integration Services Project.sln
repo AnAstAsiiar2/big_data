@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "Goods Integration Services Project", "Goods Integration Services Project\Goods Integration Services Project.dtproj", "{5A16A6B2-00C7-4621-8AE7-D155C9667323}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A16A6B2-00C7-4621-8AE7-D155C9667323}.Development|Default.ActiveCfg = Development
+		{5A16A6B2-00C7-4621-8AE7-D155C9667323}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE63E41F-9CDF-4651-8569-BFA841F5955E}
+	EndGlobalSection
+EndGlobal
